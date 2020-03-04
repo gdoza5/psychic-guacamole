@@ -6,7 +6,7 @@ const { requireSignin, isAuth, isAdmin } =  require('../controllers/auth');
 const { userById } = require("../controllers/user");
 
 router.post(
-    '/category/create', 
+    '/category/create/:userId', 
     requireSignin, 
     isAuth, 
     isAdmin, 
